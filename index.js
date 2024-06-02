@@ -1,3 +1,4 @@
+
 let availableKeywords = ["biriyani","South Indian Meals","Dhalrice and potato fry",
 "Chicken chettinad" ,
 "Appam", 
@@ -9,6 +10,9 @@ const resultbox =  document.querySelector(".result-box");
 const inputbox  =  document.getElementById('input-box');
 const imgbox = document.getElementById('img-addr');
 
+inputbox.addEventListener("click",function(){
+    imgbox.classList.remove("hidden");
+});
 inputbox.onkeyup = function() {
     let results = [];
     let input  = inputbox.value;
@@ -34,7 +38,7 @@ function display(results){
 
     }).join("");
     resultbox.innerHTML = "<ul>"  + content + "</ul>";
-
+  
 
 }
 function selectInput(list){
@@ -42,4 +46,3 @@ function selectInput(list){
     resultbox.innerHTML ="";
     
 }
-// alert("hello");

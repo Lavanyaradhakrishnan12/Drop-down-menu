@@ -26,7 +26,7 @@ body {
 #heading{
     text-align: center;
     color: #ffff;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Noto Serif", serif;
     letter-spacing: 1px;
     margin: 0;
@@ -38,9 +38,10 @@ span{
     color: #ffff;
     font-family: "Josefin Sans", sans-serif;
     line-height: 20px;
+    font-size: 20px;
 }
 .search-box{
-    width: 320px;
+    width: 400px;
     background-color: whitesmoke;
     border-radius: 5px;
     position: absolute;
@@ -105,24 +106,28 @@ button .fa-solid {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 70%;  
+    top: 68%;  
+    left: 5%;
     z-index: 1;
 }
 #img-addr .img-div {
-    width: 160px;
-    height: 120px;
+    width: 180px;
+    height: 140px;
     background-color: #ffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .img-div img {
-    height: 115px;
-    width: 150px;
+    height: 135px;
+    width: 175px;
+}
+.img-div:hover{
+    transform: scale(1.1);
 }
 .address {
     width: 200px;
-    margin-left:80px;
+    margin-left:180px;
 }
 .address p {
     margin: 0;
@@ -138,37 +143,5 @@ button .fa-solid {
         width: 90%;
         /* height: 90%; */
     }
-    /* #heading {
-        font-size: 20px;
-    }
-    #para {
-        text-align: center;
-    }
-    .search-box{
-        width: 280px;
-        position: absolute;
-        top: 35%;
-        left:7%; 
-    }
-    .row {
-        padding: 10px 10px;
-    }
-    #img-addr {
-        position: absolute;
-        top: 85%;
-    }
-    #img-addr .img-div {
-        width: 70px;
-        height: 60px;
-    }
-    .img-div img {
-        width: 65px;
-        height: 55px;
-    }
-    .address {
-        width: fit-content;
-        margin-left: 20px;
-        line-height: 20px;
-    } */
-   
+    
 }
